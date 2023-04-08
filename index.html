@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="name-container">
+        <h1 class="name">Pedro Alexander Beltran Hernandez</h1>
+        <hr />
+        <h2 class="major">Desarrollador web FullStack</h2>
+      </div>
+      <img class="profile-photo" src="./src/assets/img/photo.PNG" alt="photo" />
+    </header>
+
+    <main>
+      <section class="about-container">
+        <h2>Acerca de</h2>
+        <p>
+          Desarrollador Frontend con 1+ años de experiencia en React, Redux y tecnologías relacionadas. Buscando expandir habilidades en backend con Node.js mediante cursos y proyectos personales. Colaborador efectivo en equipos, comunicador claro y motivado a aprender nuevas tecnologías. Capacidad demostrada para resolver problemas y cumplir con plazos en entornos de ritmo acelerado."
+        </p>
+      </section>
+      
+      <section class="skills-container">
+        <hr />
+        <h2>Habilidades</h2>
+        <ul id="skills-container"></ul>
+      </section>
+      
+      <br />
+      
+      <section class="portfolio-container font-blank">
+        <h2>Portafolio</h2>
+        <ul id="projects-container"></ul>
+      </section>
+
+      <section class="modal-info" id="modal-info">
+        <img id="close" class="close-icon" src="./src/assets/icons/close.svg" alt="close">
+        <div>
+          <h2>Vista previa</h2>
+          <figure>
+            <img id="cover" src="./src/assets/covers/cover1.PNG" alt="cover1">
+          </figure>
+          
+        </div>
+        <ul class="links">
+          <h2>Ver</h2>
+          <li>
+            <a id="page" href="#" target="_blank">
+              <figure>
+                <img class="icon-modal" src="./src/assets/icons/link.svg" alt="link page" />
+                <figcaption>Pagina</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a id="repo" href="#" target="_blank" />
+              <figure>
+                <img class="icon-modal" src="./src/assets/icons/github.svg" alt="github">
+                <figcaption>GitHub</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="contact-container font-blank">
+        <h2>Contacto</h2>
+        <form id="form">
+          <div class="input-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Nombre" required  autocomplete="off" />
+          </div>
+          <div class="input-form">
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" placeholder="Asunto" required autocomplete="off" />
+          </div>
+          <div class="input-form">
+            <label for="message">Mensaje:</label>
+            <textarea name="message" id="message" cols="30" rows="4 " placeholder="Mensaje" required></textarea>
+          </div>
+          <input class="btn" type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    
+    <hr />
+    
+    <footer>
+      <div class="social-networks">
+        <h2>Redes sociales</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/Alex-Beltran97?tab=repositories" target="_blank">
+              <figure>
+                <img class="icon-skill github" src="./src/assets/icons/github.svg" alt="github" />
+                <figcaption>GitHub</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/alexanderbeltran97/" target="_blank">
+              <figure>
+                <img class="icon-skill linkedin" src="./src/assets/icons/linkedin.svg" alt="linkedin" />
+                <figcaption>LinkedIn</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Celular</h2>
+    
+        <div class="contact">
+          <div class="contact-icons">
+            <img class="icon-skill" src="./src/assets/icons/whatsapp.svg" alt="whatsapp" />
+          </div>
+          <div class="contact-values">
+            <p>+57 319 705 40 85</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
